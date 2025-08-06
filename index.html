@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Моя визитка</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Добро пожаловать на мою визитку</h1>
+      <img src="./Image/my photo.jpg" alt="Фото со мной" class="profile-img" />
+    </header>
+    <nav class="navigator">
+      <ul>
+        <li><a href="#about">О себе</a></li>
+        <li><a href="#hobbies">Мое хобби</a></li>
+        <li><a href="#skills">Навыки</a></li>
+        <li><a href="#achiev">Достижеия</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+        <li><a href="#photo">Фото</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="about">
+        <h2>О себе</h2>
+        <p class="about-p">
+          Добро пожаловать! Меня зовут Роман Манойло. Я Старший Инженер-технолог
+          по механической обработке с 9+ годами опыта в данной сфере
+          деятельности. На протяжении своей карьеры я занимался не только
+          сложными проектами с нуля, но и так же помогал другим инженерам расти
+          в данном направлении, обучал вновь трудоустроившихся колег сложным
+          производственным процессам и помогал максимально быстро влиться в
+          рабочий процесс.
+        </p>
+        <p class="about-p">
+          Так же в ходе работы самостоятельно изучил такое сложно направление
+          как
+          <a
+            href="https://ru.wikipedia.org/wiki/Термическая_обработка_металлов"
+            target="_blank"
+            ><strong>Термообработка</strong></a
+          >.Вел целый производственный участок по данному направлению. В моем
+          подчинение было 4 термиста, с которыми каждый день необходимо было
+          взаимодействовать и назначать режимы теробработки заготовок.
+        </p>
+      </section>
+      <section id="hobbies">
+        <h2>Мое хобби</h2>
+        <p>В свободное время я люблю:</p>
+        <ul>
+          <li>Путешествовать</li>
+          <li>Заниматься спортом</li>
+          <li>Проводить время в компании друзей</li>
+          <li>И просто играть с котиком</li>
+        </ul>
+      </section>
+      <section id="skills">
+        <h2>Навыки</h2>
+        <p>Технические навыки:</p>
+        <ul>
+          <li>
+            CAD/CAM системы:
+            <ul>
+              <li><strong>Компас 3D (эксперт)</strong>;</li>
+              <li>CATIA;</li>
+              <li><strong>SolidWorks</strong>;</li>
+              <li>SmarTeam;</li>
+            </ul>
+          </li>
+          <li>
+            Производственные системы:
+            <ul>
+              <li><strong>1С:УПП</strong>;</li>
+              <li>Appius-PLM;</li>
+              <li>САПР ТП;</li>
+            </ul>
+          </li>
+          <li>
+            Технологии:
+            <ul>
+              <li>Разработка Технологических Процессов;</li>
+              <li>Руководства технического обслуживания (PTO);</li>
+              <li>Маршрутных карт;</li>
+              <li>Технических инструкций;</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section id="achiev">
+        <h2>Мои достижения</h2>
+        <div class="achiev-container">
+          <div class="card-achiev">
+            <h3>Сертификат 1</h3>
+            <p>
+              Прошел курсы по программе КОМПАС-3D. Дополнительно получил
+              сертификат о повышении квалификации по направлению Термообработка
+            </p>
+            <span class="year">2024</span>
+          </div>
+          <div class="card-achiev">
+            <h3>Сертификат 2</h3>
+            <p>Прошел обучение по переподготовки персонала</p>
+            <span class="year">2024</span>
+          </div>
+          <div class="card-achiev">
+            <h3>Сертификат 3</h3>
+            <p>Прошел обучение программе 1С:УПП</p>
+            <span class="year">2024</span>
+          </div>
+        </div>
+      </section>
+      <section id="contacts">
+        <h2>Контакты</h2>
+        <p>Вы можете связаться со мной через:</p>
+        <ul>
+          <li>
+            Telegram:<a href="https://t.me/rmanoylo" target="_blank"
+              >@rmanoylo</a
+            >
+          </li>
+          <li>
+            Phone:<a href="tel:+78005553535" target="_blank">
+              +7-800-555-35-35</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section id="photo">
+        <h2>Мои фотографии</h2>
+        <div class="photo-grid">
+          <input type="radio" name="page" id="page1" checked />
+          <input type="radio" name="page" id="page2" />
+          <input type="radio" name="page" id="page3" />
+          <div class="photos-container">
+            <img src="./Image/photo1.jpg" alt="1 фото" />
+            <img src="./Image/photo2.jpg" alt="2 фото" />
+            <img src="./Image/photo5.jpg" alt="3 фото" />
+            <img src="./Image/photo4.jpg" alt="4 фото" />
+            <img src="./Image/photo3.jpg" alt="5 фото" />
+          </div>
+          <nav class="pagination">
+            <ul>
+              <li><label for="page1" class="page active">1</label></li>
+              <li><label for="page2" class="page">2</label></li>
+              <li><label for="page3" class="page">3</label></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <hr />
+    </main>
+    <footer class="footer">
+      <p>© 2025 Roman Manoylo</p>
+    </footer>
+  </body>
+</html>
